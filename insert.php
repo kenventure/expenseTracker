@@ -38,7 +38,7 @@ while($row = pg_fetch_assoc($result))
 ?>
 </select>
 <li>Amount:</li><li><input type="text" name="amount" /></li>
-<li>Date:</li><li><li><input type="date" name="date"></li>
+<li>Date:</li><li><input type="date" name="date"></li>
 <li><input type="submit" /></li>
 </form>
 </ul>
