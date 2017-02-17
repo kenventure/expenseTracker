@@ -43,10 +43,12 @@ jQuery.ajax({
       <table border="2" style= "background-color: #84ed86; color: #761a9b; margin: 0 auto;" >
       <thead>
         <tr>
+			<th>ID</th>
           <th>Name</th>
           <th>Type</th>
           <th>Date</th>
           <th>Amount</th>
+		  <th>Update</th>
         </tr>
       </thead>
 	  
@@ -87,10 +89,14 @@ catch(Exception $e) {
 	?>
 	
 	          <tr>
+			  <td><?php echo$row['ID']?></td>
               <td><?php echo$row['Name']?></td>
               <td><?php echo$row['Type']?></td>
               <td><?php echo $row['Date']?></td>
               <td><?php echo $row['Amount']?></td>
+			  <td><A href=update.php?ID=<?php echo $row['ID']?>&Name=<?php echo $row['Name']?>
+			  
+			  >[Edit]</A>
             </tr>
 			
 <?php
